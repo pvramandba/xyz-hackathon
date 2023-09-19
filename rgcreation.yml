@@ -1,6 +1,9 @@
-- name: Create a resource group
-  azure_rm_resourcegroup:
-    name: myResourceGroup
-    tags:
-        testing: testing
-        delete: never
+- name: Create resource group
+  hosts: localhost
+  tasks:
+   - name: Create a resource group
+     azure_rm_resourcegroup:
+       name: myResourceGroup
+       tags:
+         testing: testing
+         delete: never
