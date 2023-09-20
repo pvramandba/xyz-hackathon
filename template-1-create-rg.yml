@@ -1,7 +1,7 @@
 - name: Create RG
   hosts: all
   vars:
-    resource_gp: rg-sandhya
+    resource_gp: rg-ram
     location: eastasia
   tasks:
   
