@@ -12,7 +12,7 @@
     rg_name: "test-ansible"
     vnet_name: "test-ansible"
     subnet_name: "test-ansible"
-    location: "centralindia"
+    location: "SouthEast"
     
 
   tasks:
