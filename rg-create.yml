@@ -4,12 +4,11 @@
     vars:
       resource_gp: rg-ram
     tasks:
-       - name: Create a resource group
-         azure_rm_resourcegroup:
-           resource_group: "{{ resource_gp }}"
-           location: EastAsia
-         register: rg
-       - name: print the details
+    - name: Create a resource group
+        azure_rm_resourcegroup:
+          resource_group: "{{ resource_gp }}"
+          location: EastAsia
+        register: rg
+    - name: print the details
          debug:
-           var: rg
-      
+           var: rg  
