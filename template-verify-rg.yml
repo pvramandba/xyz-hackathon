@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Verify Resource group
+      azure_rm_resourcegroup_info:
+        name: "{{ resource_gp }}"
+      register: rg
+    - name: Print
+      debug:
+        var: rg.resourcegroups
