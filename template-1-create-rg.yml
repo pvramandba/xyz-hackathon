@@ -1,0 +1,14 @@
+- name: Create RG
+  hosts: all
+  vars:
+    resource_gp: rg-sandhya
+    location: eastasia
+  tasks:
+  
+  - name: Create resource group
+    azure_rm_resourcegroup:
+      name: "{{ resource_gp }}"
+      location: "{{ location }}"
+    register: rg
+  - debug:
+      var: rg
