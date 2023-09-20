@@ -2,12 +2,11 @@
   hosts: localhost
   vars:
     resource_gp: rg-ram
-    location: eastasia
   tasks:
    - name: Create a resource group
      azure_rm_resourcegroup:
        resource_group: "{{ resource_gp }}"
-       location: "{{ location }}"
+       location: EastAsia
      register: rg
    - name: print the details
      debug:
