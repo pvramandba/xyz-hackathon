@@ -7,6 +7,6 @@
        location: EastAsia
      register: rg
    - name: print the details
-     degbug:
+     debug:
        var: rg
       
