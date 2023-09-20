@@ -5,9 +5,6 @@
       azure_rm_resourcegroup:
         name: "{{ resource_group }}"
         location: EastAsia
-        tags:
-          testing: testing
-          delete: never
       register: rg
     - name: print the details
       degbug:
