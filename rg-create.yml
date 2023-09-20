@@ -1,12 +1,12 @@
- - name: Create resource group
-   hosts: localhost
-   tasks:
-    - name: Create a resource group
-      azure_rm_resourcegroup:
-        name: "{{ resource_group }}"
-        location: EastAsia
-      register: rg
-    - name: print the details
-      degbug:
-        var: rg
+- name: Create resource group
+  hosts: localhost
+  tasks:
+   - name: Create a resource group
+     azure_rm_resourcegroup:
+       name: "{{ resource_group }}"
+       location: EastAsia
+     register: rg
+   - name: print the details
+     degbug:
+       var: rg
       
