@@ -10,7 +10,7 @@
   - name: Create resource group
     azure_rm_resourcegroup:
       name: myResourceGroup
-      location: centralindia
+      location: 'centralindia'
 
   - name: Create virtual network
     azure_rm_virtualnetwork:
