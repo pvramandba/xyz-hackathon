@@ -10,9 +10,9 @@
     vm_username: "testansible"
     vm_password: "my-password@1234"
     rg_name: "test-ansible"
-    vnet_name: "VNET-SEA-ETSDB-POT-01"
-    subnet_name: "Application"
-    location: "southeastasia"    
+    vnet_name: "test-ansible"
+    subnet_name: "test-ansible"
+    location: "southeastasia"   
 
   tasks:
     - name: Create a Resource Group
